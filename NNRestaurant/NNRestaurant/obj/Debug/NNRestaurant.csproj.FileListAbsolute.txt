@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\NNRestaurant\NNRestaurant\bin\Debug\NNRestaurant.exe.config
+C:\Users\Admin\source\repos\NNRestaurant\NNRestaurant\bin\Debug\NNRestaurant.exe
+C:\Users\Admin\source\repos\NNRestaurant\NNRestaurant\bin\Debug\NNRestaurant.pdb
+C:\Users\Admin\source\repos\NNRestaurant\NNRestaurant\obj\Debug\NNRestaurant.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\NNRestaurant\NNRestaurant\obj\Debug\NNRestaurant.Form1.resources
+C:\Users\Admin\source\repos\NNRestaurant\NNRestaurant\obj\Debug\NNRestaurant.Properties.Resources.resources
+C:\Users\Admin\source\repos\NNRestaurant\NNRestaurant\obj\Debug\NNRestaurant.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\NNRestaurant\NNRestaurant\obj\Debug\NNRestaurant.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\NNRestaurant\NNRestaurant\obj\Debug\NNRestaurant.exe
+C:\Users\Admin\source\repos\NNRestaurant\NNRestaurant\obj\Debug\NNRestaurant.pdb
