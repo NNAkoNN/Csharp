@@ -14,8 +14,6 @@ namespace NNRestaurant
     {
         Employee request = new Employee();
         object object1;
-        int ready = 0;
-        int reqS = 0;
         public Form1()
         {
             InitializeComponent();
@@ -33,8 +31,6 @@ namespace NNRestaurant
 
         private void button1_Click(object sender, EventArgs e)
         {
-            reqS++;
-            ready = reqS - 1;
             if (radioButton1.Checked)
             {
                 object1 = request.NewRequest(Convert.ToInt32(textBox1.Text), "Chicken");
@@ -50,7 +46,6 @@ namespace NNRestaurant
 
         private void button2_Click(object sender, EventArgs e)
         {
-            reqS++;
             try
             {
                 object1 = request.CopyRequest();
@@ -64,19 +59,11 @@ namespace NNRestaurant
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ready++;
             try
             {
-                if (ready > reqS)
-                {
-                    throw new Exception("Emplyee Can't Cook The Already Prepared request!");
-                }
-                else
-                {
-                    label5.Text += request.PrepareFood(object1) + "\n";
-                }
+                label5.Text += request.PrepareFood(object1) + "\n";
             }
-            catch (Exception newExc)
+            catch(Exception newExc)
             {
                 label5.Text += newExc.Message + "\n";
             }

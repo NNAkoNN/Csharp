@@ -13,9 +13,11 @@ namespace NNRestaurant
         bool firstOrder = false;
         string typeCopy;
         int newOrders = 0;
+        int reqS = 0;
         public object NewRequest(int quantity, string menuItem)
         {
             newOrders++;
+            reqS = newOrders - 1;
             firstOrder = true;
             quantityCopy = quantity;
             typeCopy = menuItem;
@@ -50,9 +52,11 @@ namespace NNRestaurant
         }
         public object CopyRequest()
         {
+            newOrders++;
+            reqS = newOrders - 1;
             if (!firstOrder)
             {
-                throw new Exception("Пока Не Было Заказов!");
+                throw new Exception("Заказов Ещё Не Было!");
             }
             else
             {
@@ -82,6 +86,11 @@ namespace NNRestaurant
         }
         public string PrepareFood(object order)
         {
+            reqS++;
+            if(reqS > newOrders)
+            {
+                throw new Exception("Нельзя Приготовить Уже Приготовленный Заказ!");
+            }
             if (order is ChickenOrder)
             {
                 int i;
